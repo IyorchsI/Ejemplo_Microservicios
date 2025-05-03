@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "cb1f6049-2409-4765-84c6-78fef8c773b5",
+		"name": "Spring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43918273",
+		"_collection_link": "https://contr-494850.postman.co/workspace/Contr's-Workspace~1bf8053b-1d16-41cb-85d3-a3e0579ce5eb/collection/43918273-cb1f6049-2409-4765-84c6-78fef8c773b5?action=share&source=collection_link&creator=43918273"
+	},
+	"item": [
+		{
+			"name": "listar productos",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Producto id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "usuarios",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "usuario id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "productos 5000",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "usuarios2",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,672 @@
+{
+	"info": {
+		"_postman_id": "61f9db3a-adfc-4cf0-bdd2-6d4f71212fe0",
+		"name": "Pruebas TOKENS JWT Microservicios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21638757"
+	},
+	"item": [
+		{
+			"name": "Prueba 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"danielp\",\r\n    \"email\": \"danielp@unicauca.edu.co\",\r\n    \"password\": \"1234567\",\r\n    \"role\": [\"moderator\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:6000/api/auth/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"danielp\",\r\n    \"email\": \"danielp@unicauca.edu.co\",\r\n    \"password\": \"1234567\",\r\n    \"role\": [\"mod\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/auth/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"juanperez\",\r\n    \"email\": \"juanp@unicauca.edu.co\",\r\n    \"password\": \"1234567\",\r\n    \"role\": [\"admin\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/auth/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"tatiana\",\r\n    \"email\": \"tatiana@unicauca.edu.co\",\r\n    \"password\": \"1234567\",\r\n    \"role\": [\"user\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/auth/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba 5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"danielp\",\r\n    \"password\": \"1234567\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:6000/api/auth/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba 6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"danielp\",\r\n    \"password\": \"1234567\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/auth/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba 7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"juanperez\",\r\n    \"password\": \"1234567\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/auth/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba 8",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"tatiana\",\r\n    \"password\": \"1234567\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/auth/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prueba9",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YXRpYW5hIiwicm9sZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTc0NzE4MzYwMCwiZXhwIjoxNzQ3MTgzNjIwfQ.Uq1rHit1vjsuC-3m5QrkALOP3KHBcbSKWh4mJvaW2qA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/productos",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prueba10",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YXRpYW5hIiwicm9sZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTc0NzE4MzQyOSwiZXhwIjoxNzQ3MTgzNDQ5fQ.K1sgT0dxpnD-a-RLxuathIoC-S6Wwg9dwV4v-AWaqaaa",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/productos",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prueba11",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/productos",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prueba12",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YXRpYW5hIiwicm9sZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTc0NzE4NDE5NiwiZXhwIjoxNzQ3MTg0MjE2fQ.uFW94qSj4J4QJVAI5gZdyfqx0G4fnXAteJO1QmSwhDg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5001/api/productos",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"api",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba 13",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"tatiana\",\r\n    \"password\": \"1234567\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/auth/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prueba13.1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0YXRpYW5hIiwicm9sZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTc0NzE4NDUxNCwiZXhwIjoxNzQ3MTg0NTM0fQ.5S7iLZkyrcJ6l49yUZ7B3I5IwPMrV8XCTAmO2WYlfQw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/productos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"productos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba 13.2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"juanperez\",\r\n    \"password\": \"1234567\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/auth/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prueba13.3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqdWFucGVyZXoiLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0NzE4NDU3MywiZXhwIjoxNzQ3MTg0NTkzfQ.kuD_PCagdmNhQVjK_N0sdFosmIC3E1HN08P7POR5af4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/productos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"productos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba 14",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"danielp\",\r\n    \"password\": \"1234567\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/auth/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prueba14.1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWxwIiwicm9sZXMiOlsiUk9MRV9NT0RFUkFUT1IiXSwiaWF0IjoxNzQ3MTg0NzYxLCJleHAiOjE3NDcxODQ3ODF9.mhxqg6F5JWkgxTGFMfykENcrGzUJ_Ax7Bu_tSZ_RuCU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/usuarios",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prueba15",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYW5pZWxwIiwicm9sZXMiOlsiUk9MRV9NT0RFUkFUT1IiXSwiaWF0IjoxNzQ3MTg0ODczLCJleHAiOjE3NDcxODQ4OTN9.E6x4FUAFxH9AaZSo6RwfJv8wvm38NJhTlLb9xWjuczw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/usuarios/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"usuarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba 16",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"juanperez\",\r\n    \"password\": \"1234567\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/auth/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prueba16.1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqdWFucGVyZXoiLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0NzE4NTAxMywiZXhwIjoxNzQ3MTg1MDMzfQ.Dv77xutqJ-8Jl9dfbywCS9ZsMQHcU-aynHM8qZoyhx0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/usuarios/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"usuarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "prueba17",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJqdWFucGVyZXoiLCJyb2xlcyI6WyJST0xFX0FETUlOIl0sImlhdCI6MTc0NzE4NTAxMywiZXhwIjoxNzQ3MTg1MDMzfQ.Dv77xutqJ-8Jl9dfbywCS9ZsMQHcU-aynHM8qZoyhx0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/usuarios/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"usuarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Prueba 18",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"juanperez1\",\r\n    \"password\": \"1234567\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/auth/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

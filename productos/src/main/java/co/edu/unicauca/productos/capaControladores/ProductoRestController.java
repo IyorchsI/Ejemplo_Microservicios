@@ -4,6 +4,7 @@ package co.edu.unicauca.productos.capaControladores;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -22,6 +23,7 @@ public class ProductoRestController {
 	private IProductoService productoService;
 
 	@GetMapping("/productos")
+	@PreAuthorize("hasAnyRole('USER','ADMIN')")
 	public ResponseEntity<?> listarProductos(@RequestHeader(value="X-Gateway-Passed",required = false) String gatewayHeader){
 		if (gatewayHeader == null || !gatewayHeader.equals("true")){
 			return ResponseEntity.status(HttpStatus.FORBIDDEN)
@@ -32,6 +34,7 @@ public class ProductoRestController {
 	}
 
 	@GetMapping("/productos/{id}")
+	@PreAuthorize("hasAnyRole('ADMIN')")
 	public ProductoDTO consultarProducto(@PathVariable Integer id) {
 		ProductoDTO objProducto = null;
 		objProducto = productoService.findById(id);
